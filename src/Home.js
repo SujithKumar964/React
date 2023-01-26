@@ -1,8 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Stock1 from './images/stock2.jpg';
 import Stock2 from './images/stock1.jpeg';
+import './Home.css';
 
 const Home = () => {
   return (
@@ -58,7 +60,7 @@ const Home = () => {
             </div>
         </div>
         <div className="button">
-        <a type="button" href="login.html" className="btn btn-primary btn-lg">Get Started <i className="fa-solid fa-arrow-right"></i></a>
+        <NavLink type="button" to="Signup" className="btn btn-primary btn-lg">Get Started <i className="fa-solid fa-arrow-right"></i></NavLink>
         </div>
       </section>
       <Footer/>

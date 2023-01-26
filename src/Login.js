@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar';
+import { NavLink } from 'react-router-dom';
 import Profile from './images/profile.png';
 const Login = () => {
   return (
@@ -21,7 +22,7 @@ const Login = () => {
             <input type="checkbox" className="form-check-input my-2" id="exampleCheck1"/>
             <label className="form-check-label my-1" for="exampleCheck1">Remember me</label>
           </div>
-          <center><a href="dashboard.html"><button type="button" className="btn btn-success">Login</button></a></center>
+          <center><NavLink to="/dashborad"><button type="button" className="btn btn-success">Login</button></NavLink></center>
         </div>
       </div>
     </div>
